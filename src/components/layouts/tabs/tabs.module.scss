@@ -1,0 +1,14 @@
+.tabContainer {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem 1.75rem;
+}
+.tabLink {
+  text-decoration: none;
+  color: #013a6b;
+  font-weight: 700;
+  font-size: 1.25rem;
+  &.highlight {
+    color: #00a1ff;
+  }
+}

@@ -1,20 +1,27 @@
-import roboto from "./font";
+import lexed from "../font";
+import COLORS from "./colors";
 
 const lightShades = {
   primary: {
-    main: "#ff5c35",
+    main: COLORS.light_primary,
   },
   secondary: {
-    main: "#6666ff",
+    main: COLORS.light_secondary,
+  },
+  info: {
+    main: COLORS.light_info,
   },
 };
 
 const darkShades = {
   primary: {
-    main: "#180bb1",
+    main: COLORS.dark_primary,
   },
   secondary: {
-    main: "#000059",
+    main: COLORS.dark_secondary,
+  },
+  info: {
+    main: COLORS.dark_info,
   },
 };
 
@@ -26,14 +33,19 @@ const getTheme = (mode) => {
         ? {
             primary: darkShades.primary,
             secondary: darkShades.secondary,
+            info: darkShades.info,
           }
         : {
             primary: lightShades.primary,
             secondary: lightShades.secondary,
+            info: lightShades.info,
           }),
     },
     typography: {
-      fontFamily: roboto.style.fontFamily,
+      fontFamily: lexed.style.fontFamily,
+      button: {
+        textTransform: "none",
+      },
     },
   };
 };

@@ -1,7 +1,7 @@
 "use client";
 import { useContext } from "react";
 import { Button } from "@mui/material";
-import ThemeContext from "./app/context";
+import ThemeContext from "./context";
 
 function DummyBtn() {
   const { switchMode } = useContext(ThemeContext);

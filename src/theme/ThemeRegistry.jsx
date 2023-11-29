@@ -7,11 +7,11 @@ import { CacheProvider } from "@emotion/react";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import getTheme from "./theme";
-import ThemeContext from "./context";
+import ThemeContext from "../context";
 
 export default function ThemeRegistry(props) {
   const { options, children } = props;
-  const [mode, setMode] = useState("light");
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const [{ cache, flush }] = useState(() => {
     const cache = createCache(options);
     cache.compat = true;
@@ -51,17 +51,20 @@ export default function ThemeRegistry(props) {
       />
     );
   });
-  const switchMode = useCallback(() => {
-    setMode((mode) => (mode === "light" ? "dark" : "light"));
+  const setDarkMode = useCallback((isDark) => {
+    setIsDarkMode(isDark);
   }, []);
   return (
     <CacheProvider value={cache}>
       <ThemeContext.Provider
         value={{
-          switchMode,
+          isDarkMode,
+          setDarkMode,
         }}
       >
-        <ThemeProvider theme={createTheme(getTheme(mode))}>
+        <ThemeProvider
+          theme={createTheme(getTheme(isDarkMode ? "dark" : "light"))}
+        >
           <CssBaseline />
           {children}
         </ThemeProvider>
