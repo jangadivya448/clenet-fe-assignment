@@ -3,6 +3,9 @@
   width: 100vw;
   overflow: hidden;
   display: flex;
+  @media only screen and (max-width: 950px) {
+    flex-direction: column;
+  }
   .leftsideHeroSection {
     flex: 5;
     background-color: #f7f6f9;
@@ -10,12 +13,10 @@
   }
   .rightsideFormSection {
     flex: 2;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .heading {
-    }
     .subHeading {
       font-size: 0.8rem;
       margin: 0.5rem 0 1rem;
@@ -35,7 +36,7 @@
       display: flex;
       justify-content: center;
       gap: 0.5rem;
-      margin-top: 2rem;
+      margin: 2rem 0;
     }
   }
 }

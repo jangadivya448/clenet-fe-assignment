@@ -12,6 +12,15 @@ h1.galeryHeader {
     gap: 1.75rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: #f4f4f4;
+    @media only screen and (max-width: 950px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media only screen and (max-width: 700px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (max-width: 450px) {
+      grid-template-columns: 1fr;
+    }
     .galleryCard {
       display: flex;
       justify-content: center;
@@ -23,7 +32,7 @@ h1.galeryHeader {
         position: absolute;
         right: 10px;
         top: 10px;
-        filter: drop-shadow(0px 0px 10px #ffff);
+        filter: drop-shadow(0px 0px 3px #000);
         &:hover {
           transform: scale(1.25);
           transition: transform 0.5s ease-in-out;

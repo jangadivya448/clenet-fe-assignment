@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import classNames from "classnames";
 import styles from "./tabs.module.scss";
 
-function TabItem({ tab }) {
+function TabItem({ tab, noHandler }) {
   const pathname = usePathname();
   return (
     <Link

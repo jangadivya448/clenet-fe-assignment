@@ -32,7 +32,7 @@ function Login() {
         <Image src={loginHero} alt="login hero" fill objectFit="cover" />
       </section>
       <section className={styles.rightsideFormSection}>
-        <h4 className={styles.heading}>Welcome to Materialize! 👋</h4>
+        <h4>Welcome to Materialize! 👋</h4>
         <p className={styles.subHeading}>
           Please sign-in to your account and start the adventure
         </p>
