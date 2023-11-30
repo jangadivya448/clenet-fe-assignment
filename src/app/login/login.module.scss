@@ -1,0 +1,41 @@
+.loginContainer {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  .leftsideHeroSection {
+    flex: 5;
+    background-color: #f7f6f9;
+    position: relative;
+  }
+  .rightsideFormSection {
+    flex: 2;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .heading {
+    }
+    .subHeading {
+      font-size: 0.8rem;
+      margin: 0.5rem 0 1rem;
+    }
+    .remindSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 1rem;
+    }
+    .newAccount {
+      margin: 1rem 0 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .socialLinks {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+  }
+}
