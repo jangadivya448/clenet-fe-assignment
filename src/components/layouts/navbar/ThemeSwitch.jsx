@@ -12,7 +12,7 @@ function ThemesSwitch() {
       onChange={(e) => {
         setDarkMode(e.target.checked);
       }}
-      color="info"
+      color="primary"
     />
   );
 }

@@ -1,6 +1,7 @@
 import { Button, FormControlLabel } from "@mui/material";
 import styles from "./navbar.module.scss";
 import ThemesSwitch from "./ThemeSwitch";
+import Link from "next/link";
 
 function Navbar() {
   return (
@@ -17,7 +18,9 @@ function Navbar() {
         />
       </div>
       <div className={styles.navbarRightContainer}>
-        <Button color="info">Login</Button>
+        <Link href="/login" className={styles.loginBtn}>
+          Log in
+        </Link>
         <Button variant="contained">Start free or get a demo</Button>
       </div>
     </nav>
