@@ -9,8 +9,11 @@ function Navbar() {
         <FormControlLabel
           value="end"
           control={<ThemesSwitch color="info" />}
-          label="High Contrast"
+          label={<h4>High Contrast</h4>}
           labelPlacement="end"
+          sx={{
+            fontWeight: 700,
+          }}
         />
       </div>
       <div className={styles.navbarRightContainer}>

@@ -1,0 +1,11 @@
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  .imageWrapper {
+    position: relative;
+    width: 530px;
+    max-width: 100%;
+    aspect-ratio: 1.5;
+  }
+}

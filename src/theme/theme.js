@@ -1,4 +1,4 @@
-import lexed from "../font";
+import { lexed } from "../font";
 import COLORS from "./colors";
 
 const lightShades = {
@@ -45,6 +45,7 @@ const getTheme = (mode) => {
       fontFamily: lexed.style.fontFamily,
       button: {
         textTransform: "none",
+        fontWeight: 700,
       },
     },
   };

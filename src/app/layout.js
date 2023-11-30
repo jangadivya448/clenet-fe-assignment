@@ -1,5 +1,5 @@
 import ThemeRegistry from "../theme/ThemeRegistry";
-import lexed from "../font";
+import { lexed } from "../font";
 
 import "../styles/globals.css";
 

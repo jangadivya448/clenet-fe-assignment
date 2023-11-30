@@ -1,8 +1,15 @@
-import { Lexend } from "next/font/google";
+import { Lexend,  Saira } from "next/font/google";
+
 const lexed = Lexend({
-  weight: "700",
+  weight: ["400", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
 
-export default lexed;
+const comfortaa = Saira({
+  weight: ["400", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export { lexed, comfortaa };
