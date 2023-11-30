@@ -1,6 +1,8 @@
 import homeLaptop from "../../public/home-laptop.png";
 import blogsHome from "../../public/blogs-home.png";
 import heart from "../../public/heart.png";
+import menu from "../../public/menu.png";
+
 import gallery_1 from "../../public/gallery/gallery-1.png";
 import gallery_2 from "../../public/gallery/gallery-2.png";
 import gallery_3 from "../../public/gallery/gallery-3.png";
@@ -14,6 +16,7 @@ export {
   homeLaptop,
   blogsHome,
   heart,
+  menu,
   gallery_1,
   gallery_2,
   gallery_3,

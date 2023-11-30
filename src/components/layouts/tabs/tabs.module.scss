@@ -1,7 +1,23 @@
 .tabContainer {
-  display: flex;
-  gap: 3rem;
   padding: 1rem 1.75rem;
+  display: flex;
+  .desktopTabs {
+    flex: 1;
+    display: flex;
+    gap: 3rem;
+  }
+  .mobileTabs {
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    justify-content: flex-end;
+    .desktopTabs {
+      display: none;
+    }
+    .mobileTabs {
+      display: block;
+    }
+  }
 }
 .tabLink {
   text-decoration: none;

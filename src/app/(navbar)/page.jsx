@@ -10,7 +10,7 @@ function Home() {
       <h1>
         27 Best About Us and about Me Page <br /> Examples of 2023[+Templates]
       </h1>
-      <Button variant="contained">Download Now: Free Bbout Us Examples</Button>
+      <Button variant="contained">Download Now: Free About Us Examples</Button>
       <section className={commonstyles.centerContainer}>
         <div className={commonstyles.centerDiv}>
           <p>
