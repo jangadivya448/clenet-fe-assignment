@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import Image from "next/image";
-import homeLaptop from "../../../public/home-laptop.png";
+import { homeLaptop } from "@/data/images";
 import commonstyles from "@/styles/commonStyles.module.scss";
 import styles from "./home.module.scss";
 

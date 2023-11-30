@@ -1,7 +1,7 @@
 import Image from "next/image";
+import { blogsHome } from "@/data/images";
 import commonstyles from "@/styles/commonStyles.module.scss";
 import styles from "./blogs.module.scss";
-import blogsHome from "../../../../public/blogs-home.png";
 
 function Blogs() {
   return (
@@ -28,7 +28,8 @@ function Blogs() {
                 site&apos;s needs and goals.
               </p>
               <p className={styles.blogAuthor}>
-                Anna Fetzgerald &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8/11/22
+                Anna Fetzgerald
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8/11/22
               </p>
             </div>
           </div>
