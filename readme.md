@@ -26,6 +26,8 @@ Steps to run the project inside PC:
     ```bash
     http://localhost:3000
     ```
+## Website
+Project deployed on Vercel which is hosting platform for NextJS, check here to view the page: [https://divya-janga-clenet-fe-assignment.vercel.app/](https://divya-janga-clenet-fe-assignment.vercel.app/)
 
 ## Route Details
 - `/` Home page or About Us Template page
