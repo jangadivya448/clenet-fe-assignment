@@ -14,11 +14,14 @@ Steps to run the project inside PC:
     ```bash
     npm install
     ```
-- Run the project
+- Run the project using below commands
     ```bash
-    npm run dev
+    npm run build
     ```
-    wait for  minute to run server properly
+    ```bash
+    npm start
+    ```
+    Run above commands one after another, `npm run build` may take a minute
 -  Open the Chorme or any other browser and hit below URL
     ```bash
     http://localhost:3000
